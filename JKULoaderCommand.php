@@ -19,7 +19,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 final class JKULoaderCommand extends ObjectOutputCommand
 {
     public function __construct(
-        private JKUFactory $jkuFactory,
+        private readonly JKUFactory $jkuFactory,
     ) {
         parent::__construct();
     }

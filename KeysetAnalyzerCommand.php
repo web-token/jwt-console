@@ -26,8 +26,8 @@ use Symfony\Component\Console\Output\OutputInterface;
 final class KeysetAnalyzerCommand extends Command
 {
     public function __construct(
-        private KeysetAnalyzerManager $keysetAnalyzerManager,
-        private KeyAnalyzerManager $keyAnalyzerManager,
+        private readonly KeysetAnalyzerManager $keysetAnalyzerManager,
+        private readonly KeyAnalyzerManager $keyAnalyzerManager,
     ) {
         parent::__construct();
     }
